@@ -47,6 +47,7 @@ body,html{
 #nav-bar a{
     text-decoration: none;
     color:#f9f9f9;
+    transition: .3s;
 }
 #nav-bar a:hover{
     border-bottom: 3px solid #f9f9f9;
@@ -77,11 +78,17 @@ body,html{
     width: 50px;
     /* margin: 20px 5px; */
     padding: 2px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #f9f9f9;
     background-color: #181818;
+    transition:  .5s;
+}
+#button1:hover{
+    cursor: pointer;
+    border-radius: 40px;
 }
 #input1{
+    font-family: 'DM Sans', sans-serif;
     /* display: block; */
     color: #f9f9f9;
     /* margin: 20px; */

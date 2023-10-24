@@ -156,4 +156,10 @@ window.addEventListener("load",getNewsForMainCard);
 
 const button1 = document.getElementById("button1");
 const input1 = document.getElementById("input1");
+input1.addEventListener("keypress",(event)=>{
+    console.log(event);
+    if(event.key=="Enter"){
+        getNewsForSearch();
+    }
+})
 button1.addEventListener("click", getNewsForSearch);
