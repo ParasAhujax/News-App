@@ -1,6 +1,7 @@
 function settingHtmlForMainCard(data){
+    const mainCard = document.getElementById("main-card")   
+
     for(let i=0; i<4 ; i++){      
-        const mainCard = document.getElementById("main-card")        
  
         const urlA = document.createElement("a");
         urlA.className = "linkUrl";
@@ -36,8 +37,16 @@ function settingHtmlForMainCard(data){
 }
 const getNewsForMainCard = () => {
     const mainCard = document.getElementById("main-card")        
-    mainCard.textContent = "Loading...";        
-       
+    // mainCard.textContent = "Loading...";        
+    
+    let loadingDiv = document.createElement("div")
+    loadingDiv.id = "Loading";
+    let loading = document.createElement("h1");       
+    let textNodeLoading = document.createTextNode("Loading...");
+    loading.appendChild(textNodeLoading);
+    loadingDiv.appendChild(loading);
+    mainCard.appendChild(loadingDiv);
+
     let query = window.location.pathname;
     console.log(query);
 
@@ -55,7 +64,7 @@ const getNewsForMainCard = () => {
         return data.json();
     })
     .then(data => {
-        mainCard.textContent = "";
+        mainCard.innerHTML = "";
         console.log(data);
 
         settingHtmlForMainCard(data);
