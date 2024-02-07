@@ -36,8 +36,7 @@ function settingHtmlForMainCard(data){
     }
 }
 const getNewsForMainCard = () => {
-    const mainCard = document.getElementById("main-card")        
-    // mainCard.textContent = "Loading...";        
+    const mainCard = document.getElementById("main-card")               
     
     let loadingDiv = document.createElement("div")
     loadingDiv.id = "Loading";

@@ -26,6 +26,7 @@ body::-webkit-scrollbar-thumb{
     padding: 25px 30px;
     font-size: 3vh;
     width: 100%;
+    /* position: fixed; */
 }
 .logo{
     width: 60px;
@@ -121,9 +122,11 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
 }
 #main-card .heading-div{
+    /* position: absolute; */
     color: #181818;
     width: 100%;
     background-color: #f9f9f9;
+    /* height:auto; */
     padding: 3px auto;
     border-radius: 10px;
     padding: 10px;
@@ -138,9 +141,9 @@ body::-webkit-scrollbar-thumb{
     height: 350px;
     transition: .25s;
 }
-/* .card-large:hover,.card-small:hover, .newCard:hover{
-    box-shadow: #f9f9f9 0px 0px 2px 2px;    
-} */
+.card-large:hover,.card-small:hover, .newCard:hover{
+    /* box-shadow: #f9f9f9 0px 0px 2px 2px; */    
+}
 .card-large:hover{
     width:725px;
     height:375px;
@@ -162,6 +165,8 @@ body::-webkit-scrollbar-thumb{
 }
 #resultDiv {
     margin-top: 1vh;
+    /* width: 80%; */
+    /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -185,6 +190,7 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
     background-position: center;
     transition: .25s;
+
 }
 .newCard:hover{
     width:375px;
